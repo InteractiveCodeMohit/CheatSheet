@@ -1,0 +1,1266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism.css">
+    <script src="prism.js"></script>
+    <title>Cheat sheet Template</title>
+</head>
+
+<body>
+    <nav>
+        <span class="logo"><img src="logo.png"  alt=""></span>
+        <div class="content center">
+            This is HTML, CSS and JAVASCRIPT Cheat Sheet for You!
+        </div>
+    </nav>
+    <div class="container">
+        <ol>
+            <div class="html5">
+                <span class="html5"><img src="html5.png" alt=""></span>
+                HTML-5 Cheat Sheet Page
+            </div>
+
+            <h1>Structure</h1><br>
+            <li>This is the basic template or barebone structure of HTML
+                <pre class="language-html"><code>&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+    &ltmeta charset="UTF-8"&gt
+    &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+    &lttitle&gtDocument&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+    
+&lt/body&gt
+&lt/html&gt</code></pre>
+            </li>
+
+            <h1>Heading Tag </h1><br>
+            <li>There are six headings available in HTML, H1 is the largest among all, and H6 is the smallest</li>
+            <pre class="language-html"><code>
+                    &lth1&gtHeading 1&lt/h1&gt
+                    &lth2&gtHeading 2&lt/h2&gt                    
+                    &lth3&gtHeading 3&lt/h3&gt              
+                    &lth4&gtHeading 4&lt/h4&gt
+                    &lth5&gtHeading 5&lt/h5&gt
+                    &lth6&gtHeading 6&lt/h6&gt
+                </code></pre>
+            </li>
+
+            <h1>Container</h1><br>
+            <li>Container tags are the tags that contain some data such as text, image, etc. There are several
+                container tags in HTML.<br>
+                <h2> div tag</h2><br>
+                div tag or division tag is used to make blocks or divisions in the document.
+                <pre class="language-html"><code>
+                 &ltdiv&gt This is div block &lt/div&gt
+                </code></pre>
+            </li>
+
+            <h1>Span</h1><br>
+            <li>span is a container for inline content<br>
+                <pre class="language-html"><code>
+                    &ltspan&gt This is span block &lt/span&gt
+                </code></pre>
+            </li>
+
+            <h1>p tag</h1><br>
+            <li>Paragraph<br>
+                <pre class="language-html"><code>
+                    &ltp&gt This is a paragraph &lt/p&gt
+                </code></pre>
+            </li>
+
+            <h1>pre tag</h1><br>
+            <li>pre tag represents pre-formatted text<br>
+                <pre class="language-html"><code>
+                    &ltpre&gt Hello World &lt/pre&gt
+                </code></pre>
+            </li>
+
+            <h1>code tag</h1><br>
+            <li>code tag is used to represent source codes<br>
+                <pre class="language-html"><code>
+                    &ltcode&gt
+                      import python
+                    &lt/code&gt
+                </code></pre>
+            </li>
+
+            <h1>Text Formatting</h1><br>
+            <li>Text formatting tags are used to format text or data of HTML documents. You can do certain
+                things like creating italic, bold, strong text to make your document look more attractive and
+                understandable.<br>
+                <pre class="language-html"><code>
+            &ltb&gt tag
+            &ltb&gtI'm bold text&lt/b&gt
+            &ltstrong&gt tag
+            &ltstrong&gtI'm important text&lt/strong&gt
+            &lti&gt tag
+            &lti&gtI'm italic text&lt/i&gt
+            &ltem&gt tag
+            &ltem&gtEmphasized text&lt/em&gt
+            &ltsub&gt tag
+            &ltsub&gtSubscript&lt/sub&gt
+            &ltsup&gt tag
+            &ltsup&gtSuperscript&lt/sup&gt
+                </code></pre>
+            </li>
+
+            <h1>Lists</h1><br>
+            <li>Lists can be either numerical, alphabetic, bullet, or other symbols. You can specify list type and
+                list items in HTML for the clean document.<br>
+                <pre class="language-html"><code>
+                    &ltol&gt tag
+                    Ordered list starts with &ltol&gt tag and each list item starts with &ltli&gt tag
+                    &ltol&gt
+                    &ltli&gtData 1&lt/li&gt
+                    &ltli&gtData 2&lt/li&gt
+                    &ltli&gtData 3&lt/li&gt
+                    &lt/ol&gt
+                    &ltul&gt tag
+                    &ltul&gt
+                    &ltli&gtYour Data&lt/li&gt
+                    &ltli&gtYour Data&lt/li&gt
+                    &lt/ul&gt
+                </code></pre>
+            </li>
+
+            <h1>Media</h1><br>
+            <li>Media is anything that is present in digital form such as image, video, audio, etc.<br>
+                <pre class="language-html"><code>
+                    &ltaudio&gt tag
+                    It is used to embed sound content in the document.
+                    &ltaudio controls&gt
+                    &ltsource src="demo.mp3" type="audio/mpeg"&gt
+                    Your browser does not support the audio element.
+                    &lt/audio&gt
+                    &ltimg&gt tag
+                    It is used to embed or import image in a webpage.
+                    &ltimg src="Source_of_image" alt="Alternate text"&gt
+                    &ltvideo&gt tag
+                    It is used to embed video in the webpage.
+                    &ltvideo width="480" height="320" controls&gt
+                    &ltsource src="demo_move.mp4" type="video/mp4"&gt
+                    Your browser does not support the video tag.
+                    &lt/video&gt
+                </code></pre>
+            </li>
+
+            <h1>Table</h1><br>
+            <li>A table is a collection of rows and columns. It is used to represent data in tabular form.<br>
+                <pre class="language-html"><code>
+                    Table Structure
+                    &lttable&gt
+                    &ltcaption&gtDemo Table&lt/caption&gt
+                    &ltthead&gt
+                    &lttr&gt
+                    &ltth&gtColumn1&lt/th&gt
+                    &ltth colspan="2"&gtColumn2&lt/th&gt
+                    &lt/tr&gt
+                    &lt/thead&gt
+                    &lttbody&gt
+                    &lttr&gt
+                    &lttd&gtData1&lt/td&gt
+                    &lttd&gtData2&lt/td&gt
+                    &lttd&gtData2&lt/td&gt
+                    &lt/tr&gt
+                    &lttr&gt
+                    &lttd&gtData1&lt/td&gt
+                    &lttd&gtData2&lt/td&gt
+                    &lttd&gtData2&lt/td&gt
+                    &lt/tr&gt
+                    &lt/tbody&gt
+                    &lttfoot&gt
+                    &lttr&gt
+                    &lttd&gt&nbsp;&lt/td&gt
+                    &lttd&gtData&lt/td&gt
+                    &lttd&gtData&lt/td&gt
+                    &lt/tr&gt
+                    &lt/tfoot&gt
+                    &lt/table&gt
+                </code></pre>
+            </li>
+
+            <h1>Links</h1><br>
+            <li>Links are clickable text that can redirect you to some other page.<br>
+                <pre class="language-html"><code>
+                    &lta&gt tag
+                    &lta&gt or anchor tag defines a hyperlink.
+                    &lta href="https://www.InteractiveCodeMohit.com/"&gtVisit InteractiveCodeMohit.com!&lt/a&gt                    
+                </code></pre>
+            </li>
+
+            <h1>Form</h1><br>
+            <h2>Sample Form</h2><br>
+            <li>Form is used to collect user's input, generally user's data is sent to server for further
+                processing.<br>
+                <pre class="language-html"><code>
+                    &ltform action="/action.php" method="post"&gt
+                    Name: &ltinput name="name" type="text" /&gt &ltbr /&gt
+                    Age: &ltinput max="90" min="1" name="age" step="1" type="number" value="18" /&gt
+                    &ltselect name="gender"&gt
+                    &ltoption selected="selected" value="male"&gtMale&lt/option&gt
+                    &ltoption value="female"&gtFemale&lt/option&gt
+                    &lt/select&gt&ltbr /&gt
+                    &ltinput checked="checked" name="newsletter" type="radio" value="daily" /&gt Dai
+                    type="radio" value="weekly" /&gt Weekly&ltbr /&gt
+                    &lttextarea cols="20" name="comments" rows="5"&gtComment&lt/textarea&gt&ltbr /&gt
+                    &ltlabel&gt&ltinput name="terms" type="checkbox" value="tandc" /&gtAccept terms&lt/lab
+                    &ltinput type="submit" value="Submit" /&gt
+                    &lt/form&gt                   
+                </code></pre>
+            </li>
+
+            <h1>Characters & Symbols</h1><br>
+            <li>Some symbols are not directly present on the keyboard, but there are some ways to use them in
+                HTML documents. We can display them either by entity name, decimal, or hexadecimal value.
+                <br>
+                <pre class="language-html"><code>
+                    &copy;
+                    Less than (&lt)
+                    &lt
+                    Greater than (&gt)
+                    &gt;
+                    Ampersand (&)
+                    &amp;
+                    Dollar ($)
+                    &dollar;
+                    Random Text
+                    Elon Musk
+                </code></pre>
+            </li>
+            <hr>
+            <div class="CSS-3">
+                <span class="css3"><img src="css3.png" alt=""></span>
+                CSS-3 Cheat Sheet Page
+            </div>
+
+            <h1>Font</h1><br>
+            <li>There are many properties related to the font, such as the face, weight, style, etc. These
+                properties allow you to change the style or complete look of your text.
+                <br>
+                <pre class="language-css"><code>
+                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    Font-Style
+                    font-style: italic;
+                    Font-Variant
+                    font-variant: small-caps;
+                    Font-Weight
+                    font-weight: bold;
+                    Font-Size
+                    font-size: larger;
+                    Font
+                    font: style variant weight size family;
+                </code></pre>
+            </li>
+
+            <h1>Text</h1><br>
+            <li>Text properties allow one to manipulate alignment, spacing, decoration, indentation, etc., in the
+                document.
+                <br>
+                <pre class="language-css"><code>
+                    Text-Align
+                    text-align: justify;
+                    Letter-Spacing
+                    letter-spacing: .15em;
+                    Text-Decoration
+                    text-decoration: underline;
+                    Word-Spacing
+                    word-spacing: 0.25em;
+                    Text-Transform
+                    text-transform: uppercase;
+                    Text-Indent
+                    text-indent: 0.5cm;
+                    Line-Height
+                    line-height: normal;
+                </code></pre>
+            </li>
+
+            <h1>Background</h1><br>
+            <li>As the name suggests, these properties are related to background, i.e., you can change the color,
+                image, position, size, etc., of the document.
+                <br>
+                <pre class="language-css"><code>
+                    Background-Image
+                    background-image: url("Path");
+                    Background-Position
+                    background-position: right top;
+                    Background-Size
+                    background-size: cover;
+                    Background-Repeat
+                    background-repeat: no-repeat;
+                    Background-Attachment
+                    background-attachment: scroll;
+                    Background-Color
+                    background-color: fuchsia;
+                    Background
+                    background: color image repeat attachment position;
+                </code></pre>
+            </li>
+
+            <h1>Border</h1><br>
+            <li>Border properties are used to change the style, radius, color, etc., of buttons or other items of
+                the document.
+                <br>
+                <pre class="language-css"><code>
+                    Border-Width
+                    border-width: 5px;
+                    Border-Style
+                    border-style: solid;
+                    Border-Color
+                    border-color: aqua;
+                    Border-Radius
+                    border-radius: 15px;
+                    Border
+                    border: width style color;
+                    
+                </code></pre>
+            </li>
+
+            <h1>Box Model</h1><br>
+            <li>In laymen's terms, the CSS box model is a container that wraps around every HTML element. It
+                consists of margins, borders, padding, and the actual content. It is used to create the design and
+                layout of web pages.
+                <br>
+                <pre class="language-css"><code>
+                    Float
+                    float: none;
+                    Clear
+                    clear: both;
+                    Display
+                    display: block;
+                    Height
+                    height: fit-content;
+                    Width
+                    width: auto;
+                    Margin
+                    margin: top right bottom left;
+                    Padding
+                    padding: top right bottom left;
+                    Overflow
+                    overflow: hidden;
+                    Visibility
+                    visibility: visible;
+                    
+                </code></pre>
+            </li>
+
+            <h1>Colors</h1><br>
+            <li> With the help of the color property, one can give color to text, shape, or any other object.
+                <br>
+                <pre class="language-css"><code>
+                    Color
+                    color: cornsilk;
+                    Opacity
+                    opacity: 4;
+                    
+                </code></pre>
+            </li>
+
+            <h1>Template Layout</h1><br>
+            <li> Specifies the visual look of the content inside a template
+                <br>
+                <pre class="language-css"><code>
+                    Box-Align
+                    box-align : start;
+                    Box-Direction
+                    box-direction : normal;
+                    Box-Flex
+                    box-flex : normal;
+                    Box-Flex-Group
+                    box-flex-group : 2;
+                    Box-Orient
+                    box-orient : inline;
+                    Box-Pack
+                    box-pack : justify;
+                    Box-Sizing
+                    box-sizing : margin-box;
+                    max-width
+                    max-width: 800px;
+                    min-width
+                    min-width: 500px;
+                    max-height
+                    max-height: 100px;
+                    min-height
+                    min-height: 80px;
+                </code></pre>
+            </li>
+
+            <h1>Table</h1><br>
+            <li>Table properties are used to give style to the tables in the document. You can change many
+                things like border spacing, table layout, caption, etc.
+                <br>
+                <pre class="language-css"><code>
+                    Border-Collapse
+                    border-collapse: separate;
+                    Empty-Cells
+                    empty-cells: show;
+                    Border-Spacing
+                    border-spacing: 2px;
+                    Table-Layout
+                    table-layout: auto;
+                    Caption-Side
+                    caption-side: bottom;
+
+                </code></pre>
+            </li>
+
+            <h1>Columns</h1><br>
+            <li>These properties are used explicitly with columns of the tables, and they are used to give the
+                table an incredible look.
+                <br>
+                <pre class="language-css"><code>
+                    Column-Count
+                    column-count : 10;
+                    Column-Gap
+                    column-gap : 5px;
+                    Column-rule-width
+                    column-rule-width : medium;
+                    Column-rule-style
+                    column-rule-style : dotted ;
+                    Column-rule-color
+                    column-rule-color : black;
+                    Column-width
+                    column-width : 10px;
+                    Column-span
+                    column-span : all;
+
+                </code></pre>
+            </li>
+
+            <h1>List & Markers</h1><br>
+            <li>List and marker properties are used to customize lists in the document.
+                <br>
+                <pre class="language-css"><code>
+                    List-style-type
+                    list-style-type: square;
+                    List-style-position
+                    list-style-position : 20px;
+                    List-style-image
+                    list-style-image : url(�image.gif�);
+                    Marker-offset
+                    marker-offset : auto;
+
+                </code></pre>
+            </li>
+
+            <h1>Animations</h1><br>
+            <li>CSS animations allow one to animate transitions or other media files on the web page.
+                <br>
+                <pre class="language-css"><code>
+                    Animation-name
+                    animation-name : myanimation;
+                    Animation-duration
+                    animation-duration : 10s;
+                    Animation-timing-function
+                    animation-timing-function : ease;
+                    Animation-delay
+                    animation-delay : 5ms;
+                    Animation-iteration-count
+                    animation-iteration-count : 3;
+                    Animation-direction
+                    animation-direction : normal;
+                    Animation-play-state
+                    animation-play-state : running;
+                    Animation-fill-mode
+                    animation-fill-mode : both;
+
+                </code></pre>
+            </li>
+
+            <h1>Transitions</h1><br>
+            <li>Transitions let you define the transition between two states of an element.
+                <br>
+                <pre class="language-css"><code>
+                    Transition-property
+                    transition-property: none;
+                    Transition-duration
+                    transition-duration : 2s;
+                    Transition-timing-function
+                    transition-timing-function: ease-in-out;
+                    Transition-delay
+                    transition-delay : 20ms;
+                    
+                </code></pre>
+            </li>
+
+            <h1>CSS Flexbox</h1><br>
+            <li>Flexbox is a layout of CSS that lets you format HTML easily. Flexbox makes it simple to align
+                items vertically and horizontally using rows and columns. Items will "flex" to different sizes to fill
+                the space. And overall, it makes the responsive design more manageable.
+                <br>
+                <pre class="language-css"><code>
+                    Parent Properties (flex container)
+                    display
+                    display: flex;
+                    flex-direction
+                    flex-direction: row | row-reverse | column | column-reverse;
+                    flex-wrap
+                    flex-wrap: nowrap | wrap | wrap-reverse;
+                    flex-flow
+                    flex-flow: column wrap;
+                    justify-content
+                    align-items
+                    align-content
+                    justify-content: flex-start | flex-end | center | space-between | space-arou
+                    align-items: stretch | flex-start | flex-end | center | baseline | first bas
+                    align-content: flex-start | flex-end | center | space-between | space-around 
+                    Child Properties (flex items)
+                    order
+                    order: 5; /* default is 0 */
+                    flex-grow
+                    flex-grow: 4; /* default 0 */
+                    flex-shrink
+                    flex-shrink: 3; /* default 1 */
+                    flex-basis
+                    flex-basis: | auto; /* default auto */
+                    flex shorthand
+                    flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+                    align-self
+                    align-self: auto | flex-start | flex-end | center | baseline | stretch;
+
+                </code></pre>
+            </li>
+
+            <h1>CSS Grid</h1><br>
+            <li>Grid layout is a 2-Dimensional grid system to CSS that creates complex responsive web design
+                layouts more easily and consistently across browsers.
+                <br>
+                <pre class="language-css"><code>
+                    Parent Properties (Grid container)
+                    display
+                    display: grid | inline-grid;
+
+                    grid-template-columns
+                    grid-template-columns: 12px 12px 12px;
+
+                    grid-template-rows
+                    grid-template-rows: 8px auto 12px;
+
+                    grid-template
+                    grid-template: none | &ltgrid-template-rows&gt / &ltgrid-template-columns&gt;
+
+                    column-gap
+                    column-gap: &ltline-size&gt;
+
+                    row-gap
+                    row-gap: &ltline-size&gt;
+
+                    grid-column-gap
+                    grid-column-gap: &ltline-size&gt;
+
+                    grid-row-gap
+                    grid-row-gap: &ltline-size&gt;
+
+                    gap shorthand
+                    gap: &ltgrid-row-gap&gt &ltgrid-column-gap&gt;
+
+                    grid-gap shorthand
+                    grid-gap: &ltgrid-row-gap&gt &ltgrid-column-gap&gt;
+
+                    justify-items
+                    justify-items: start | end | center | stretch;
+
+                    align-items
+                    align-items: start | end | center | stretch;
+
+                    place-items
+                    place-items: center;
+
+                    justify-content
+                    justify-content: start | end | center | stretch | space-around | space-between
+
+                    align-content
+                    align-content: start | end | center | stretch | space-around | space-between 
+
+                    place-content
+                    place-content: &ltalign-content&gt / &ltjustify-content&gt ;
+
+                    grid-auto-columns
+                    grid-auto-columns: &lttrack-size&gt ...;
+
+                    grid-auto-rows
+                    grid-auto-rows: &lttrack-size&gt ...;
+                    
+                    grid-auto-flow
+                    grid-auto-flow: row | column | row dense | column dense;
+
+                    Child Properties (Grid items)
+                    grid-column-start
+                    grid-column-start: &ltnumber&gt | &ltname&gt | span &ltnumber&gt | span &ltname&gt | auto;
+
+                    grid-column-end
+                    grid-column-end: &ltnumber&gt | &ltname&gt | span &ltnumber&gt | span &ltname&gt | auto;
+                    
+                    grid-row-start
+                    grid-row-start: &ltnumber&gt | &ltname&gt | span &ltnumber&gt | span &ltname&gt | auto;
+
+                    grid-row-end
+                    grid-row-end: &ltnumber&gt | &ltname&gt | span &ltnumber&gt | span &ltname&gt | auto;
+
+                    grid-column shorthand
+                    grid-column: &ltstart-line&gt / &ltend-line&gt | &ltstart-line&gt / span &ltvalue&gt;
+
+                    grid-row shorthand
+                    grid-row: &ltstart-line&gt / &ltend-line&gt | &ltstart-line&gt / span &ltvalue&gt;
+
+                    grid-area
+                    grid-area: &ltname&gt | &ltrow-start&gt / &ltcolumn-start&gt / &ltrow-end&gt / &ltcolumn-end&gt;
+
+                    justify-self
+                    justify-self: start | end | center | stretch;
+
+                    align-self
+                    align-self: start | end | center | stretch;
+
+                    place-self
+                    place-self: center;
+
+                </code></pre>
+            </li>
+            <hr>
+            <div class="js">
+                <span class="js"><img src="js.png" alt=""></span>
+                JAVASCRIPT Cheat Sheet Page
+            </div>
+
+            <h1>JavaScript Basics</h1><br>
+            <li>Set of JavaScript basic syntax to add, execute and write basic programming paradigms in
+                Javascript
+                <pre class="language-js"><code>
+                    On Page Script
+
+                    Adding internal JavaScript to HTML
+                    &ltscript type="text/javascript"&gt //JS code goes here &lt/script&gt
+
+                    External JS File
+                    Adding external JavaScript to HTML
+                    &ltscript src="filename.js"&gt&lt/script&gt
+
+                    Functions
+                    JavaScript Function syntax
+                    function nameOfFunction () {
+                    // function body 
+                    }
+                    DOM Element
+                    Changing content of a DOM Element
+                    document.getElementById("elementID").innerHTML = "Hello World!";
+
+                    Output
+                    This will print the value of a in JavaScript console
+                    console.log(a);
+                </code></pre>
+            </li>
+
+            <h1>Conditional Statements</h1><br>
+            <li>Conditional statements are used to perform operations based on some conditions.
+                <pre class="language-js"><code>
+                    If Statement
+
+                    The block of code to be executed, when the condition specified is true.
+                    if (condition) {
+                    // block of code to be executed if the condition is true
+                    }
+
+                    If-else Statement
+
+                    If the condition for the if block is false, then the else block will be executed.
+
+                    if (condition) {
+                    // block of code to be executed if the condition is true
+                    }
+
+                    else {
+                    // block of code to be executed if the condition is false
+                    }
+
+                    Else-if Statement
+
+                    A basic if-else ladder
+                    if (condition1) {
+                    // block of code to be executed if condition1 is true
+                    }
+                     else if (condition2) {
+                    // block of code to be executed if the condition1 is false and condition2 is 
+                    }
+                     else {
+                    // block of code to be executed if the condition1 is false and condition2 is 
+                    }
+                    
+                    Switch Statement
+
+                    Switch case statement in JavaScript
+
+                    switch(expression) {
+                    case x:
+                    // code block
+                    break;
+                    case y:
+                    // code block
+                    default:
+                    break;
+                    // code block
+                    }
+
+                </code></pre>
+            </li>
+
+            <h1>Iterative Statements (Loops)</h1><br>
+            <li>Iterative statement facilitates programmer to execute any block of code lines repeatedly and can
+                be controlled as per conditions added by the programmer.
+
+                <pre class="language-js"><code>
+                    For Loop
+
+                    For loop syntax in javascript
+
+                    for (statement 1; statement 2; statement 3) {
+                    // code block to be executed
+                    } 
+                    
+                    While Loop
+
+                    Runs the code till the specified condition is true
+
+                    while (condition) {
+                    // code block to be executed
+                    }
+
+                    Do While Loop     
+
+                    A do while loop is executed at least once despite the condition being true or false do
+
+                     {
+                    // run this code in block
+                    i++;
+                    } 
+                    while (condition);
+
+                   
+                </code></pre>
+            </li>
+
+            <h1> Strings</h1><br>
+            <li>The string is a sequence of characters that is used for storing and managing text data.
+                <pre class="language-js"><code>
+                   
+                    charAt method
+
+                    Returns the character from the specified index.
+                    
+                    str.charAt(3)
+                    
+                    concat method
+                    
+                    Joins two or more strings together.
+                    
+                    str1.concat(str2)
+
+                    index of method
+                    
+                    Returns the index of the first occurrence of the specified character from the string else -1 if not
+                    found.
+                   
+                    str.indexOf('substr')
+
+                    match method   
+   
+                    Searches a string for a match against a regular expression.
+                    
+                    str.match(/(chapter \d+(\.\d)*)/i;)
+
+                    replace method
+                   
+                    Searches a string for a match against a specified string or char and returns a new string by
+                    
+                    replacing the specified values.
+
+                    str1.replace(str2)
+
+                    search method
+                    
+                    Searches a string against a specified value.
+                    
+                    str.search('term')
+
+                    split method
+
+                    Splits a string into an array consisting of substrings.
+
+                    str.split('\n')                  
+                    
+                    substring method
+
+                    Returns a substring of a string containing characters from the specified indices.
+
+                    str.substring(0,5)
+                    
+                </code></pre>
+            </li>
+
+            <h1>Arrays</h1><br>
+            <li>The array is a collection of data items of the same type. In simple terms, it is a variable that
+                contains multiple values.
+                <pre class="language-js"><code>
+                    variable
+                    
+                    Containers for storing data.
+                    
+                    var fruit = ["element1", "element2", "element3"];  
+                    
+                    concat method
+                    
+                    Joins two or more arrays together.
+                    
+                    concat()
+                    
+                    indexOf method
+                    
+                    Returns the index of the specified item from the array
+
+                    indexOf()
+                   
+                    join method
+                   
+                    Converts the array elements to a string.
+                   
+                    join()
+
+                    pop method
+                    
+                    Deletes the last element of the array.
+                    
+                    pop()
+                    
+                    reverse method
+                    
+                    This method reverses the order of the array elements.
+                    
+                    reverse()
+
+                    sort method
+                    Sorts the array elements in a specified manner.
+                   
+                    sort()
+                   
+                    toString method
+                   
+                    Converts the array elements to a string.
+                   
+                    toString()
+                   
+                    valueOf method
+                   
+                    returns the relevant Number Object holding the value of the argument passed
+                   
+                    valueOf()
+
+                </code></pre>
+            </li>
+
+            <h1>Number Methods</h1><br>
+            <li>JS math and number objects provide several constant and methods to perform mathematical
+                operations.
+
+                <pre class="language-js"><code>
+                    toExponential method
+                   
+                    Converts a number to its exponential form.
+                   
+                    toExponential()
+
+                    toPrecision method
+                   
+                    Formats a number into a specified length.
+                   
+                    toPrecision()
+                   
+                    toString method
+                   
+                    Converts an object to a string
+                   
+                    toString()
+
+                    valueOf method
+                   
+                    Returns the primitive value of a number.
+                   
+                    valueOf()
+
+                </code></pre>
+            </li>
+
+            <h1>Maths Methods</h1><br>
+            <li>
+                <pre class="language-js"><code>
+                    ceil method
+                   
+                    Rounds a number upwards to the nearest integer, and returns the result
+                   
+                    ceil(x)
+
+                    exp method
+                   
+                    Returns the value of E^x.
+                   
+                    exp(x)
+                   
+                    log method
+                   
+                    Returns the logarithmic value of x.
+                   
+                    log(x)
+                   
+                    pow method
+
+                    Returns the value of x to the power y.
+                    
+                    pow(x,y)
+                    
+                    random method
+                    
+                    Returns a random number between 0 and 1.
+                    
+                    random()
+
+                    sqrt method
+                   
+                    Returns the square root of a number x
+                   
+                    sqrt(x)
+
+                </code></pre>
+            </li>
+
+            <h1>Dates</h1><br>
+            <li>Date object is used to get the year, month and day. It has methods to get and set day, month,
+                year, hour, minute, and seconds.
+                <pre class="language-js"><code>                    
+                    Pulling Date from the Date object
+                    
+                    Returns the date from the date object
+                    
+                    getDate()
+
+                    Pulling Day from the Date object
+                    
+                    Returns the day from the date object
+                    
+                    getDay()
+                    
+                    Pulling Hours from the Date object
+                    
+                    Returns the hours from the date object
+                    
+                    getHours()
+
+                    Pulling Minutes from the Date object
+                   
+                    Returns the minutes from the date object
+                   
+                    getMinutes()
+                   
+                    Pulling Seconds from the Date object
+                   
+                    Returns the seconds from the date object
+                   
+                    getSeconds()
+
+                    Pulling Time from the Date object
+                    
+                    Returns the time from the date object
+                    
+                    getTime()   
+
+                </code></pre>
+            </li>
+
+            <h1>Mouse Events</h1><br>
+            <li>Any change in the state of an object is referred to as an Event. With the help of JS, you can
+                handle events, i.e., how any specific HTML tag will work when the user does something.
+
+                <pre class="language-js"><code>
+                    click
+                    
+                    Fired when an element is clicked
+                    
+                    element.addEventListener('click', ()=>{
+                    
+                    // Code to be executed when the event is fired
+                    
+                    });
+
+                    oncontextmenu
+                   
+                    Fired when an element is right-clicked
+                   
+                    element.addEventListener('contextmenu', ()=>{
+                   
+                   // Code to be executed when the event is fired
+                   
+                    });
+                   
+                    dblclick
+
+                    Fired when an element is double-clicked
+                    
+                    element.addEventListener('dblclick', ()=>{
+                    
+                    // Code to be executed when the event is fired
+                    
+                    });
+
+                    mouseenter
+                   
+                    Fired when an element is entered by the mouse arrow
+                   
+                    element.addEventListener('mouseenter', ()=>{
+                   
+                   // Code to be executed when the event is fired
+                   
+                    });
+                    
+                    mouseleave
+
+                    Fired when an element is exited by the mouse arrow
+                   
+                    element.addEventListener('mouseleave', ()=>{
+                   
+                    // Code to be executed when the event is fired
+                   
+                    });
+                   
+                    mousemove
+                   
+                    Fired when the mouse is moved inside the element
+                   
+                    element.addEventListener('mousemove', ()=>{
+                   
+                     // Code to be executed when the event is fired
+                   
+                    });
+
+                </code></pre>
+            </li>
+
+            <h1>Keyboard Events</h1><br>
+            <li>
+
+                <pre class="language-js"><code>
+                    keydown
+                   
+                    Fired when the user is pressing a key on the keyboard
+                   
+                    element.addEventListener('keydown', ()=>{
+                   
+                   // Code to be executed when the event is fired
+                   
+                    });
+
+                    keypress
+                   
+                    Fired when the user presses the key on the keyboard
+                    
+                    element.addEventListener('keypress', ()=>{
+                    
+                   // Code to be executed when the event is fired
+                    
+                    });
+                    
+                    keyup
+                    
+                    Fired when the user releases a key on the keyboard
+                    
+                    element.addEventListener('keyup', ()=>{
+                    
+                    // Code to be executed when the event is fired
+                    
+                    });
+
+                </code></pre>
+            </li>
+
+            <h1>Errors</h1><br>
+            <li>Errors are thrown by the compiler or interpreter whenever they find any fault in the code, and it
+                can be of any type like syntax error, run-time error, logical error, etc. JS provides some functions
+                to handle the errors.
+                <pre class="language-js"><code>
+                    try and catch
+                    
+                    Try the code block and execute catch when err is thrown
+                    
+                    try {
+                    
+                        Block of code to try
+                    
+                    }
+                    
+                    catch(err) {
+                    
+                        Block of code to handle errors
+                    }
+
+                </code></pre>
+            </li>
+
+            <h1>Window Methods</h1><br>
+            <li>Methods that are available from the window object
+                <pre class="language-js"><code>
+                    alert method
+                    
+                    Used to alert something on the screen
+                    
+                    alert()
+
+                    blur method
+                    
+                    The blur() method removes focus from the current window.
+                    
+                    blur()
+                    
+                    setInterval
+                    
+                    Keeps executing code at a certain interval
+                    
+                    setInterval(() => {
+                    
+                    // Code to be executed
+                    
+                    }, 1000);
+
+                    setTimeout
+                    
+                    Executes the code after a certain interval of time
+                    
+                    setTimeout(() => {
+                    
+                    // Code to be executed
+                    
+                    }, 1000);
+                    
+                    close
+                    
+                    The Window. close() method closes the current window
+                    
+                    window.close()
+
+                    confirm
+                   
+                    The window.confirm() instructs the browser to display a dialog with an optional message, and to
+                   
+                    wait until the user either confirms or cancels
+                   
+                    window.confirm('Are you sure?')
+
+                    open
+
+                    Opens a new window
+                   
+                    window.open("https://www.InteractiveCodeMohit.com");
+                   
+                    prompt
+                   
+                    Prompts the user with a text and takes a value. Second parameter is the default value
+                   
+                    var name = prompt("What is your name?", "Harry");
+                   
+                    scrollBy
+                   
+                    window.scrollBy(100, 0); // Scroll 100px to the right
+                   
+                    scrollTo
+                   
+                    Scrolls the document to the specified coordinates.
+                   
+                    window.scrollTo(500, 0); // Scroll to horizontal position 500
+                   
+                    clearInterval
+                   
+                    Clears the setInterval. var is the value returned by setInterval call
+                   
+                    clearInterval(var)
+                   
+                    clearTimeout
+                   
+                    Clears the setTimeout. var is the value returned by setTimeout call
+                   
+                    clearTimeout(var)
+
+                    stop
+                   
+                    Stops the further resource loading
+                   
+                    stop()
+
+                </code></pre>
+            </li>
+
+            <h1>Query/Get Elements</h1><br>
+            <li>The browser creates a DOM (Document Object Model) whenever a web page is loaded, and with
+                the help of HTML DOM, one can access and modify all the elements of the HTML document.
+                <pre class="language-js"><code>
+                    querySelector
+                  
+                    Selector to select first matching element
+                  
+                    document.querySelector('css-selectors')
+                  
+                    querySelectorAll
+                  
+                    A selector to select all matching elements
+                  
+                    document.querySelectorAll('css-selectors', ...)
+                  
+                    getElementsByTagName
+                  
+                    Select elements by tag name
+                  
+                    document.getElementsByTagName('element-name')
+
+                    getElementsByClassName
+                    
+                    Select elements by class name
+                    
+                    document.getElementsByClassName('class-name')
+                    
+                    Get Element by Id
+                    
+                    Select an element by its id
+                    
+                    document.getElementById('id')
+                    
+                    Creating Elements
+                    
+                    Create new elements in the DOM
+                    
+                    createElement
+
+                    Create a new element
+                   
+                    document.createElement('div')
+                   
+                    createTextNode
+                   
+                    Create a new text node
+                   
+                    document.createTextNode('some text here')
+
+
+                </code></pre>
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
